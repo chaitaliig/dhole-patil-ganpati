@@ -1,0 +1,48 @@
+.SlideDiv {
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	/* width: 100vw; */
+}
+
+.Slider {
+	background-image: url('/home-page/ganpati-banner7.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* opacity: 0; */
+	height: 100%;
+	width: 100%;
+	transform: scale(1.2);
+	transition: opacity 14s ease;
+}
+
+.Slider {
+	animation: my 8s linear forwards;
+	/* opacity: 1; */
+}
+
+@keyframes my {
+
+	0%,
+	20% {
+		transform: scale(1.2);
+	}
+
+	75%,
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.Slider {
+		background-image: url('/home-page/ganpati-banner4.png');
+	}
+}
